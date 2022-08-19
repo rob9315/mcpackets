@@ -1,0 +1,8 @@
+title: Burger
+description: A simple tool for picking out information from the minecraft JARs, primarily useful for developers.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
