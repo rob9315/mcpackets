@@ -1,0 +1,32 @@
+[
+    {
+        "classes": {
+            "biome.list": "ack",
+            "biome.register": "ack",
+            "entity.list": "np",
+            "entity.trackerentry": "jt",
+            "item.list": "xw",
+            "item.register": "xw",
+            "itemstack": "xy",
+            "metadata": "ok",
+            "nbtcompound": "bw",
+            "nethandler.client": "bck",
+            "nethandler.server": "ju",
+            "particletypes": "bex",
+            "recipe.superclass": "zz"
+        },
+        "source": {
+            "classes": 1550,
+            "file": "1.6.jar",
+            "other": 2437,
+            "size": 4720746
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 72
+        }
+    }
+]

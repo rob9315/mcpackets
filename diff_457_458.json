@@ -1,0 +1,166 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_00": [
+                {
+                    "class": "ju.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 0,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "uuid"
+                        },
+                        {
+                            "field": "k",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "j",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "l",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "field": "h",
+                            "operation": "write",
+                            "type": "short"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ju.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 0,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "uuid"
+                        },
+                        {
+                            "field": "fk.l.a(k)",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "j",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "l",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "field": "h",
+                            "operation": "write",
+                            "type": "short"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            1927,
+            1930
+        ],
+        "id": [
+            "19w04b",
+            "19w05a"
+        ],
+        "name": [
+            "19w04b",
+            "19w05a"
+        ],
+        "protocol": [
+            457,
+            458
+        ]
+    }
+}

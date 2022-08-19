@@ -1,0 +1,23 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "data": [
+            null,
+            100
+        ],
+        "id": [
+            "15w31c",
+            "15w32a"
+        ],
+        "name": [
+            "15w31c",
+            "15w32a"
+        ],
+        "protocol": [
+            51,
+            52
+        ]
+    }
+}

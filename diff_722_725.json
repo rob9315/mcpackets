@@ -1,0 +1,334 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_24": [
+                {
+                    "class": "ow.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 36,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.g.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((byte[])var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "var3.length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "var3",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.h.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((byte[])var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "var3.length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "var3",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ow.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 36,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.g.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((byte[])var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "var3.length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "var3",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.h.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((byte[])var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "var3.length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "var3",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_0E": [
+                {
+                    "class": "ro.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 14,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "b == ro$a.c",
+                            "instructions": [
+                                {
+                                    "field": "(float)c.b",
+                                    "operation": "write",
+                                    "type": "float"
+                                },
+                                {
+                                    "field": "(float)c.c",
+                                    "operation": "write",
+                                    "type": "float"
+                                },
+                                {
+                                    "field": "(float)c.d",
+                                    "operation": "write",
+                                    "type": "float"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "condition": "b != ro$a.a",
+                            "instructions": [
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "enum"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ro.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 14,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "b == ro$a.c",
+                            "instructions": [
+                                {
+                                    "field": "(float)c.b",
+                                    "operation": "write",
+                                    "type": "float"
+                                },
+                                {
+                                    "field": "(float)c.c",
+                                    "operation": "write",
+                                    "type": "float"
+                                },
+                                {
+                                    "field": "(float)c.d",
+                                    "operation": "write",
+                                    "type": "float"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "condition": "b != ro$a.a",
+                            "instructions": [
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "enum"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "boolean"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            2557,
+            2559
+        ],
+        "id": [
+            "1.16-pre2",
+            "1.16-pre3"
+        ],
+        "name": [
+            "1.16 Pre-release 2",
+            "1.16 Pre-release 3"
+        ],
+        "protocol": [
+            722,
+            725
+        ]
+    }
+}

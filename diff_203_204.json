@@ -1,0 +1,61 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_SERVERBOUND_16": [
+                {
+                    "class": "jc.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 22,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "jd.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 22,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            504,
+            506
+        ],
+        "id": [
+            "16w21b",
+            "1.10-pre1"
+        ],
+        "name": [
+            "16w21b",
+            "1.10-pre1"
+        ],
+        "protocol": [
+            203,
+            204
+        ]
+    }
+}

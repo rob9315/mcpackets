@@ -1,0 +1,21 @@
+[
+    {
+        "classes": {
+            "entity.list": "hj",
+            "metadata": "ql",
+            "nethandler.client": "ko",
+            "particletypes": "bg",
+            "recipe.superclass": "ga"
+        },
+        "source": {
+            "classes": 635,
+            "file": "b1.4.jar",
+            "other": 715,
+            "size": 1309277
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

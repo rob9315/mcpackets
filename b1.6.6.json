@@ -1,0 +1,21 @@
+[
+    {
+        "classes": {
+            "entity.list": "iz",
+            "metadata": "ty",
+            "nethandler.client": "mx",
+            "particletypes": "bw",
+            "recipe.superclass": "hi"
+        },
+        "source": {
+            "classes": 738,
+            "file": "b1.6.6.jar",
+            "other": 824,
+            "size": 1423592
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

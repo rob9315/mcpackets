@@ -1,0 +1,218 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_43": [
+                {
+                    "class": "jr.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 67,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "condition": "c == 0",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "string"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "jv.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 67,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "condition": "d",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "enum"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_53": [
+                null,
+                {
+                    "class": "kl.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 83,
+                    "instructions": [
+                        {
+                            "field": "a.a.d.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.a.a.d.entrySet().iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((Map$Entry)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "(mv)var3.getKey()",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                },
+                                {
+                                    "field": "((ty)var3.getValue()).a().size()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((ty)var3.getValue()).a().iterator()",
+                                    "var": "var4"
+                                },
+                                {
+                                    "condition": "var4.hasNext()",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "var4.next()",
+                                            "var": "var5"
+                                        },
+                                        {
+                                            "field": "a.a.e.a(var5)",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        }
+                                    ],
+                                    "operation": "loop"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "field": "a.b.d.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.a.b.d.entrySet().iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((Map$Entry)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "(mv)var3.getKey()",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                },
+                                {
+                                    "field": "((ty)var3.getValue()).a().size()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((ty)var3.getValue()).a().iterator()",
+                                    "var": "var4"
+                                },
+                                {
+                                    "condition": "var4.hasNext()",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "var4.next()",
+                                            "var": "var5"
+                                        },
+                                        {
+                                            "field": "a.b.e.a(var5)",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        }
+                                    ],
+                                    "operation": "loop"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            1453,
+            1454
+        ],
+        "id": [
+            "17w48a",
+            "17w49a"
+        ],
+        "name": [
+            "17w48a",
+            "17w49a"
+        ],
+        "protocol": [
+            348,
+            349
+        ]
+    }
+}

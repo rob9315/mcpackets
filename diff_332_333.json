@@ -1,0 +1,290 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_30": [
+                {
+                    "class": "jr.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 48,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "b.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.b.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((akq)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "akr.a(var3)",
+                                    "operation": "write",
+                                    "type": "int"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "field": "c.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.c.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((akq)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "akr.a(var3)",
+                                    "operation": "write",
+                                    "type": "int"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "jr.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 48,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "b.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.b.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((akr)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "aks.a(var3)",
+                                    "operation": "write",
+                                    "type": "varint"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "condition": "a == jr$a.a",
+                            "instructions": [
+                                {
+                                    "field": "c.size()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "this.c.iterator()",
+                                    "var": "var2"
+                                },
+                                {
+                                    "condition": "var2.hasNext()",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "((akr)var2.next())",
+                                            "var": "var3"
+                                        },
+                                        {
+                                            "field": "aks.a(var3)",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        }
+                                    ],
+                                    "operation": "loop"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_17": [
+                {
+                    "class": "lr.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 23,
+                    "instructions": [
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "condition": "c == lr.a",
+                            "instructions": [
+                                {
+                                    "field": "akr.a(d)",
+                                    "operation": "write",
+                                    "type": "int"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "instructions": [
+                                {
+                                    "condition": "c == lr.b",
+                                    "instructions": [
+                                        {
+                                            "field": "e",
+                                            "operation": "write",
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "field": "f",
+                                            "operation": "write",
+                                            "type": "boolean"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                }
+                            ],
+                            "operation": "else"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "lr.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 23,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "a == lr$a.a",
+                            "instructions": [
+                                {
+                                    "field": "aks.a(b)",
+                                    "operation": "write",
+                                    "type": "int"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "instructions": [
+                                {
+                                    "condition": "a == lr$a.b",
+                                    "instructions": [
+                                        {
+                                            "field": "c",
+                                            "operation": "write",
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "field": "d",
+                                            "operation": "write",
+                                            "type": "boolean"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                }
+                            ],
+                            "operation": "else"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            1136,
+            1137
+        ],
+        "id": [
+            "1.12-pre5",
+            "1.12-pre6"
+        ],
+        "name": [
+            "1.12-pre5",
+            "1.12-pre6"
+        ],
+        "protocol": [
+            332,
+            333
+        ]
+    }
+}

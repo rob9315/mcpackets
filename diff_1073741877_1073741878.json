@@ -1,0 +1,23 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "data": [
+            2851,
+            2853
+        ],
+        "id": [
+            "1.18-pre5",
+            "1.18-pre6"
+        ],
+        "name": [
+            "1.18 Pre-release 5",
+            "1.18 Pre-release 6"
+        ],
+        "protocol": [
+            1073741877,
+            1073741878
+        ]
+    }
+}

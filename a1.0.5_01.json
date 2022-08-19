@@ -1,0 +1,19 @@
+[
+    {
+        "classes": {
+            "entity.list": "dx",
+            "particletypes": "ak",
+            "recipe.superclass": "dd"
+        },
+        "source": {
+            "classes": 403,
+            "file": "a1.0.5_01.jar",
+            "other": 462,
+            "size": 783436
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

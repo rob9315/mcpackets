@@ -1,0 +1,35 @@
+[
+    {
+        "classes": {
+            "biome.list": "aea",
+            "biome.register": "aea",
+            "block.list": "aty",
+            "block.register": "att",
+            "chatcomponent": "em",
+            "entity.list": "os",
+            "entity.trackerentry": "ks",
+            "item.list": "zi",
+            "item.register": "zf",
+            "itemstack": "zh",
+            "metadata": "pn",
+            "nbtcompound": "de",
+            "nethandler.client": "bfw",
+            "nethandler.server": "kt",
+            "particletypes": "bip",
+            "recipe.superclass": "abk"
+        },
+        "source": {
+            "classes": 1695,
+            "file": "13w38c.jar",
+            "other": 2688,
+            "size": 4998459
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 79
+        }
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "id": [
+            "14w34d",
+            "1.8-pre1"
+        ],
+        "name": [
+            "14w34d",
+            "1.8-pre1"
+        ],
+        "protocol": [
+            43,
+            44
+        ]
+    }
+}

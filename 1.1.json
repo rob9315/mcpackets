@@ -1,0 +1,23 @@
+[
+    {
+        "classes": {
+            "biome.list": "zp",
+            "biome.register": "zp",
+            "entity.list": "yr",
+            "metadata": "agh",
+            "nethandler.client": "abm",
+            "particletypes": "aar",
+            "recipe.superclass": "fk"
+        },
+        "source": {
+            "classes": 1033,
+            "file": "1.1.jar",
+            "other": 1446,
+            "size": 3862147
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

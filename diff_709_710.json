@@ -1,0 +1,198 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_59": [
+                {
+                    "class": "ql.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 89,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b.size()",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.b.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((ql$a)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "var3.a()",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "var3.b()",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "var3.c().size()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "var3.c().iterator()",
+                                    "var": "var4"
+                                },
+                                {
+                                    "condition": "var4.hasNext()",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "((aof)var4.next())",
+                                            "var": "var5"
+                                        },
+                                        {
+                                            "field": "var5.a()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "field": "var5.d()",
+                                            "operation": "write",
+                                            "type": "double"
+                                        },
+                                        {
+                                            "field": "var5.c().a()",
+                                            "operation": "write",
+                                            "type": "byte"
+                                        }
+                                    ],
+                                    "operation": "loop"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "qk.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 89,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b.size()",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.b.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((qk$a)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "gg.P.b(var3.a())",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                },
+                                {
+                                    "field": "var3.b()",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "var3.c().size()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "var3.c().iterator()",
+                                    "var": "var4"
+                                },
+                                {
+                                    "condition": "var4.hasNext()",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "((aoh)var4.next())",
+                                            "var": "var5"
+                                        },
+                                        {
+                                            "field": "var5.a()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "field": "var5.d()",
+                                            "operation": "write",
+                                            "type": "double"
+                                        },
+                                        {
+                                            "field": "var5.c().a()",
+                                            "operation": "write",
+                                            "type": "byte"
+                                        }
+                                    ],
+                                    "operation": "loop"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            2522,
+            2524
+        ],
+        "id": [
+            "20w14~",
+            "20w14a"
+        ],
+        "name": [
+            "20w14~",
+            "20w14a"
+        ],
+        "protocol": [
+            709,
+            710
+        ]
+    }
+}

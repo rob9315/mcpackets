@@ -1,0 +1,38 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_43": [
+                null,
+                {
+                    "class": "in.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 67,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w04b",
+            "14w05b"
+        ],
+        "name": [
+            "14w04b",
+            "14w05b"
+        ],
+        "protocol": [
+            8,
+            9
+        ]
+    }
+}

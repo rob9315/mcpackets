@@ -1,0 +1,23 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "data": [
+            173,
+            180
+        ],
+        "id": [
+            "1.RV-Pre1",
+            "1.9.3-pre1"
+        ],
+        "name": [
+            "1.RV-Pre1",
+            "1.9.3-pre1"
+        ],
+        "protocol": [
+            108,
+            109
+        ]
+    }
+}

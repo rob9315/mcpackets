@@ -1,0 +1,186 @@
+{
+    "packets": {
+        "packet": {
+            "LOGIN_SERVERBOUND_00": [
+                {
+                    "class": "zf.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 0,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b.isPresent()",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "b.isPresent()",
+                            "instructions": [
+                                {
+                                    "field": "b.get().b.toEpochMilli()",
+                                    "operation": "write",
+                                    "type": "long"
+                                },
+                                {
+                                    "field": "b.get().c.getEncoded().length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "b.get().c.getEncoded()",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                },
+                                {
+                                    "field": "b.get().d.length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "b.get().d",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "LOGIN"
+                },
+                {
+                    "class": "zf.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 0,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b.isPresent()",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "b.isPresent()",
+                            "instructions": [
+                                {
+                                    "field": "b.get().b.toEpochMilli()",
+                                    "operation": "write",
+                                    "type": "long"
+                                },
+                                {
+                                    "field": "b.get().c.getEncoded().length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "b.get().c.getEncoded()",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                },
+                                {
+                                    "field": "b.get().d.length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "b.get().d",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "field": "c.isPresent()",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "c.isPresent()",
+                            "instructions": [
+                                {
+                                    "field": "c.get()",
+                                    "operation": "write",
+                                    "type": "uuid"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "LOGIN"
+                }
+            ],
+            "PLAY_CLIENTBOUND_5F": [
+                {
+                    "class": "wj.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 95,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "chatcomponent"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "wj.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 95,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "chatcomponent"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            3109,
+            3110
+        ],
+        "id": [
+            "1.19.1-rc1",
+            "1.19.1-pre2"
+        ],
+        "name": [
+            "1.19.1 Release Candidate 1",
+            "1.19.1 Pre-release 2"
+        ],
+        "protocol": [
+            1073741918,
+            1073741919
+        ]
+    }
+}

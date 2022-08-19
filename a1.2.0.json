@@ -1,0 +1,19 @@
+[
+    {
+        "classes": {
+            "entity.list": "fj",
+            "particletypes": "ar",
+            "recipe.superclass": "eh"
+        },
+        "source": {
+            "classes": 514,
+            "file": "a1.2.0.jar",
+            "other": 592,
+            "size": 1055945
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

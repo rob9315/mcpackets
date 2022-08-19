@@ -1,0 +1,23 @@
+[
+    {
+        "classes": {
+            "biome.list": "abn",
+            "biome.register": "abn",
+            "entity.list": "aao",
+            "metadata": "aim",
+            "nethandler.client": "adl",
+            "particletypes": "acq",
+            "recipe.superclass": "fr"
+        },
+        "source": {
+            "classes": 1101,
+            "file": "1.2.4.jar",
+            "other": 1517,
+            "size": 4005025
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

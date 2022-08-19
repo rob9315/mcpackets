@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "abv",
+            "biome.register": "abv",
+            "entity.list": "nd",
+            "entity.trackerentry": "jj",
+            "itemstack": "xk",
+            "metadata": "nx",
+            "nbtcompound": "bu",
+            "nethandler.client": "bbf",
+            "nethandler.server": "jk",
+            "particletypes": "bdt",
+            "recipe.superclass": "zk"
+        },
+        "source": {
+            "classes": 1509,
+            "file": "13w21a.jar",
+            "other": 2399,
+            "size": 4646482
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 67
+        }
+    }
+]

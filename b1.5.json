@@ -1,0 +1,21 @@
+[
+    {
+        "classes": {
+            "entity.list": "ik",
+            "metadata": "sz",
+            "nethandler.client": "mg",
+            "particletypes": "br",
+            "recipe.superclass": "gy"
+        },
+        "source": {
+            "classes": 711,
+            "file": "b1.5.jar",
+            "other": 794,
+            "size": 1377412
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

@@ -1,0 +1,96 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_SERVERBOUND_27": [
+                {
+                    "class": "ry.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 39,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "string"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "sb.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 39,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "f.a()",
+                            "operation": "write",
+                            "type": "string"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            2515,
+            2520
+        ],
+        "id": [
+            "20w12a",
+            "20w13a"
+        ],
+        "name": [
+            "20w12a",
+            "20w13a"
+        ],
+        "protocol": [
+            707,
+            708
+        ]
+    }
+}

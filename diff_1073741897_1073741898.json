@@ -1,0 +1,764 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_08": [
+                {
+                    "class": "ro.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 8,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "cdq.i(b)",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "rv.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 8,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_12": [
+                {
+                    "class": "ry.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 18,
+                    "instructions": [
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "ry.a(this.h)",
+                            "var": "var2"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "ry.a(var2)",
+                            "var": "var3"
+                        },
+                        {
+                            "field": "var3.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Iterator",
+                            "value": "var3.iterator()",
+                            "var": "it"
+                        },
+                        {
+                            "condition": "it.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "com.mojang.brigadier.tree.CommandNode",
+                                    "value": "it.next()",
+                                    "var": "itv"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "int",
+                                    "value": "0",
+                                    "var": "var3"
+                                },
+                                {
+                                    "condition": "itv.getRedirect() != null",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "int",
+                                            "value": "((byte)(var3 | 0x8))",
+                                            "var": "var3"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                },
+                                {
+                                    "condition": "itv.getCommand() != null",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "int",
+                                            "value": "((byte)(var3 | 4))",
+                                            "var": "var3"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                },
+                                {
+                                    "condition": "itv instanceof com.mojang.brigadier.tree.RootCommandNode",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "int",
+                                            "value": "((byte)(var3 | 0))",
+                                            "var": "var3"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                },
+                                {
+                                    "instructions": [
+                                        {
+                                            "condition": "itv instanceof com.mojang.brigadier.tree.ArgumentCommandNode",
+                                            "instructions": [
+                                                {
+                                                    "operation": "store",
+                                                    "type": "int",
+                                                    "value": "((byte)(var3 | 2))",
+                                                    "var": "var3"
+                                                },
+                                                {
+                                                    "condition": "((com.mojang.brigadier.tree.ArgumentCommandNode)itv).getCustomSuggestions() != null",
+                                                    "instructions": [
+                                                        {
+                                                            "operation": "store",
+                                                            "type": "int",
+                                                            "value": "((byte)(var3 | 0x10))",
+                                                            "var": "var3"
+                                                        }
+                                                    ],
+                                                    "operation": "if"
+                                                },
+                                                {
+                                                    "instructions": [
+                                                        {
+                                                            "condition": "itv instanceof com.mojang.brigadier.tree.LiteralCommandNode",
+                                                            "instructions": [
+                                                                {
+                                                                    "operation": "store",
+                                                                    "type": "int",
+                                                                    "value": "((byte)(var3 | 1))",
+                                                                    "var": "var3"
+                                                                }
+                                                            ],
+                                                            "operation": "if"
+                                                        }
+                                                    ],
+                                                    "operation": "else"
+                                                }
+                                            ],
+                                            "operation": "if"
+                                        }
+                                    ],
+                                    "operation": "else"
+                                },
+                                {
+                                    "field": "var3",
+                                    "operation": "write",
+                                    "type": "byte"
+                                },
+                                {
+                                    "field": "itv.getChildren().size()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "itv.getChildren().iterator()",
+                                    "var": "var4"
+                                },
+                                {
+                                    "condition": "var4.hasNext()",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "((com.mojang.brigadier.tree.CommandNode)var4.next())",
+                                            "var": "var5"
+                                        },
+                                        {
+                                            "field": "((Integer)var2.get(var5)).intValue()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        }
+                                    ],
+                                    "operation": "loop"
+                                },
+                                {
+                                    "condition": "itv.getRedirect() != null",
+                                    "instructions": [
+                                        {
+                                            "field": "((Integer)var2.get(itv.getRedirect())).intValue()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                },
+                                {
+                                    "condition": "itv instanceof com.mojang.brigadier.tree.ArgumentCommandNode",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "((com.mojang.brigadier.tree.ArgumentCommandNode)itv)",
+                                            "var": "var4"
+                                        },
+                                        {
+                                            "field": "var4.getName()",
+                                            "operation": "write",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "fw.b(var4.getType())",
+                                            "var": "var2"
+                                        },
+                                        {
+                                            "condition": "var2 == null",
+                                            "instructions": [
+                                                {
+                                                    "field": "new yt(\"\")",
+                                                    "operation": "write",
+                                                    "type": "identifier"
+                                                }
+                                            ],
+                                            "operation": "if"
+                                        },
+                                        {
+                                            "field": "var2.b",
+                                            "operation": "write",
+                                            "type": "identifier"
+                                        },
+                                        {
+                                            "args": "var4.getType(), packetbuffer",
+                                            "field": "var2.a",
+                                            "method": "a(Lcom/mojang/brigadier/arguments/ArgumentType;Lpy;)V",
+                                            "name": "a",
+                                            "operation": "interfacecall",
+                                            "target": "fv",
+                                            "type": "interface"
+                                        },
+                                        {
+                                            "condition": "var4.getCustomSuggestions() != null",
+                                            "instructions": [
+                                                {
+                                                    "field": "fy.a(var4.getCustomSuggestions())",
+                                                    "operation": "write",
+                                                    "type": "identifier"
+                                                }
+                                            ],
+                                            "operation": "if"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                },
+                                {
+                                    "instructions": [
+                                        {
+                                            "condition": "itv instanceof com.mojang.brigadier.tree.LiteralCommandNode",
+                                            "instructions": [
+                                                {
+                                                    "field": "((com.mojang.brigadier.tree.LiteralCommandNode)itv).getLiteral()",
+                                                    "operation": "write",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "operation": "if"
+                                        }
+                                    ],
+                                    "operation": "else"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "field": "var2.get(h).intValue()",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "sf.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 18,
+                    "instructions": [
+                        {
+                            "field": "i.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Iterator",
+                            "value": "this.i.iterator()",
+                            "var": "it"
+                        },
+                        {
+                            "condition": "it.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "sf$b",
+                                    "value": "it.next()",
+                                    "var": "itv"
+                                },
+                                {
+                                    "field": "itv.b",
+                                    "operation": "write",
+                                    "type": "byte"
+                                },
+                                {
+                                    "field": "itv.d.length",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "itv.d",
+                                    "operation": "write",
+                                    "type": "varint[]"
+                                },
+                                {
+                                    "condition": "itv.b & 0x8",
+                                    "instructions": [
+                                        {
+                                            "field": "itv.c",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                },
+                                {
+                                    "condition": "itv.a != null",
+                                    "instructions": [
+                                        {
+                                            "args": "packetbuffer",
+                                            "field": "itv.a",
+                                            "method": "a(Lqf;)V",
+                                            "name": "a",
+                                            "operation": "interfacecall",
+                                            "target": "sf$e",
+                                            "type": "interface"
+                                        }
+                                    ],
+                                    "operation": "if"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "field": "h",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_24": [
+                {
+                    "class": "sr.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 36,
+                    "instructions": [
+                        {
+                            "field": "hb.Z.a(j.b())",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "h",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "args": "packetbuffer",
+                            "field": "j",
+                            "method": "a(Lpy;)V",
+                            "name": "a",
+                            "operation": "interfacecall",
+                            "target": "ia",
+                            "type": "interface"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "sy.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 36,
+                    "instructions": [
+                        {
+                            "field": "hd.aa.getId(j.b())",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "double"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "h",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "args": "packetbuffer",
+                            "field": "j",
+                            "method": "a(Lqf;)V",
+                            "name": "a",
+                            "operation": "interfacecall",
+                            "target": "ic",
+                            "type": "interface"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_1A": [
+                {
+                    "class": "wh.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 26,
+                    "instructions": [
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "b.b()",
+                            "operation": "write",
+                            "type": "byte"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "wo.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 26,
+                    "instructions": [
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "b.d()",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_2E": [
+                {
+                    "class": "xb.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 46,
+                    "instructions": [
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.a.a()",
+                            "var": "var2"
+                        },
+                        {
+                            "field": "var2",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "a.b()",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.a.e()",
+                            "var": "var3"
+                        },
+                        {
+                            "field": "(float)(var3.b - ((double)var2.u()))",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "(float)(var3.c - ((double)var2.v()))",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "(float)(var3.d - ((double)var2.w()))",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "a.d()",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "xi.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 46,
+                    "instructions": [
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.a.a()",
+                            "var": "var2"
+                        },
+                        {
+                            "field": "var2",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "a.b()",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.a.e()",
+                            "var": "var3"
+                        },
+                        {
+                            "field": "(float)(var3.b - ((double)var2.u()))",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "(float)(var3.c - ((double)var2.v()))",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "(float)(var3.d - ((double)var2.w()))",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "a.d()",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_2F": [
+                {
+                    "class": "xc.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 47,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "xj.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 47,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            2974,
+            3080
+        ],
+        "id": [
+            "1.18.2-rc1",
+            "22w11a"
+        ],
+        "name": [
+            "1.18.2 Release Candidate 1",
+            "22w11a"
+        ],
+        "protocol": [
+            1073741897,
+            1073741898
+        ]
+    }
+}

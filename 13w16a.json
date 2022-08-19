@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "abh",
+            "biome.register": "abh",
+            "entity.list": "my",
+            "entity.trackerentry": "jg",
+            "itemstack": "wv",
+            "metadata": "nr",
+            "nbtcompound": "bu",
+            "nethandler.client": "bas",
+            "nethandler.server": "jh",
+            "particletypes": "bdh",
+            "recipe.superclass": "yu"
+        },
+        "source": {
+            "classes": 1475,
+            "file": "13w16a.jar",
+            "other": 2344,
+            "size": 4548759
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 62
+        }
+    }
+]

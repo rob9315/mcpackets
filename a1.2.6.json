@@ -1,0 +1,19 @@
+[
+    {
+        "classes": {
+            "entity.list": "fq",
+            "particletypes": "at",
+            "recipe.superclass": "en"
+        },
+        "source": {
+            "classes": 527,
+            "file": "a1.2.6.jar",
+            "other": 594,
+            "size": 1105909
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

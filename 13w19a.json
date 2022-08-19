@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "abk",
+            "biome.register": "abk",
+            "entity.list": "mz",
+            "entity.trackerentry": "jg",
+            "itemstack": "wz",
+            "metadata": "nt",
+            "nbtcompound": "bu",
+            "nethandler.client": "bas",
+            "nethandler.server": "jh",
+            "particletypes": "bdg",
+            "recipe.superclass": "yz"
+        },
+        "source": {
+            "classes": 1485,
+            "file": "13w19a.jar",
+            "other": 2373,
+            "size": 4612412
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 66
+        }
+    }
+]

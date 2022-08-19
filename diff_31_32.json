@@ -1,0 +1,474 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_00": [
+                {
+                    "class": "jm.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 0,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "int"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "jm.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 0,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_3F": [
+                {
+                    "class": "jg.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 63,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b.length",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "byte[]"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "jg.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 63,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "byte[]"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_44": [
+                {
+                    "class": "kn.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 68,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "ko.a[this.a.ordinal()]",
+                            "instructions": [
+                                {
+                                    "operation": "case",
+                                    "value": "1"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "2"
+                                },
+                                {
+                                    "field": "f",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "g",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "3"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "5"
+                                },
+                                {
+                                    "field": "h",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "4"
+                                },
+                                {
+                                    "field": "i",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "6"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "f",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "g",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "i",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "h",
+                                    "operation": "write",
+                                    "type": "varint"
+                                }
+                            ],
+                            "operation": "switch"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ko.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 68,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "kp.a[this.a.ordinal()]",
+                            "instructions": [
+                                {
+                                    "operation": "case",
+                                    "value": "1"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "2"
+                                },
+                                {
+                                    "field": "f",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "g",
+                                    "operation": "write",
+                                    "type": "varlong"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "3"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "5"
+                                },
+                                {
+                                    "field": "h",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "4"
+                                },
+                                {
+                                    "field": "i",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "6"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "f",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "g",
+                                    "operation": "write",
+                                    "type": "varlong"
+                                },
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "i",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "h",
+                                    "operation": "write",
+                                    "type": "varint"
+                                }
+                            ],
+                            "operation": "switch"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_48": [
+                null,
+                {
+                    "class": "kl.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 72,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "string"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_17": [
+                {
+                    "class": "ly.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 23,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b.length",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "byte[]"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "lz.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 23,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "byte[]"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_19": [
+                null,
+                {
+                    "class": "mn.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 25,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w30c",
+            "14w31a"
+        ],
+        "name": [
+            "14w30c",
+            "14w31a"
+        ],
+        "protocol": [
+            31,
+            32
+        ]
+    }
+}

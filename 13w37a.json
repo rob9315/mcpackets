@@ -1,0 +1,35 @@
+[
+    {
+        "classes": {
+            "biome.list": "ady",
+            "biome.register": "ady",
+            "block.list": "atu",
+            "block.register": "atp",
+            "chatcomponent": "ek",
+            "entity.list": "oq",
+            "entity.trackerentry": "kq",
+            "item.list": "zg",
+            "item.register": "zd",
+            "itemstack": "zf",
+            "metadata": "pl",
+            "nbtcompound": "dc",
+            "nethandler.client": "bfl",
+            "nethandler.server": "kr",
+            "particletypes": "bie",
+            "recipe.superclass": "abi"
+        },
+        "source": {
+            "classes": 1669,
+            "file": "13w37a.jar",
+            "other": 2585,
+            "size": 4905694
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 76
+        }
+    }
+]

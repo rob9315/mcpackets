@@ -1,0 +1,290 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_45": [
+                {
+                    "class": "lm.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 69,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "condition": "d",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "enum"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "lm.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 69,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "condition": "d",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "enum"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_47": [
+                {
+                    "class": "lo.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 71,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "condition": "i",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "j",
+                                    "operation": "write",
+                                    "type": "byte"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "f",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "g",
+                                    "operation": "write",
+                                    "type": "enum"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "condition": "i",
+                            "instructions": [
+                                {
+                                    "field": "h.size()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "this.h.iterator()",
+                                    "var": "var2"
+                                },
+                                {
+                                    "condition": "var2.hasNext()",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "((String)var2.next())",
+                                            "var": "var3"
+                                        },
+                                        {
+                                            "field": "var3",
+                                            "operation": "write",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "operation": "loop"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "lo.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 71,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "condition": "i",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                },
+                                {
+                                    "field": "j",
+                                    "operation": "write",
+                                    "type": "byte"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "f",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "g",
+                                    "operation": "write",
+                                    "type": "enum"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "condition": "i",
+                            "instructions": [
+                                {
+                                    "field": "h.size()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "this.h.iterator()",
+                                    "var": "var2"
+                                },
+                                {
+                                    "condition": "var2.hasNext()",
+                                    "instructions": [
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "((String)var2.next())",
+                                            "var": "var3"
+                                        },
+                                        {
+                                            "field": "var3",
+                                            "operation": "write",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "operation": "loop"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            1513,
+            1516
+        ],
+        "id": [
+            "1.13-pre7",
+            "1.13-pre8"
+        ],
+        "name": [
+            "1.13-pre7",
+            "1.13-pre8"
+        ],
+        "protocol": [
+            389,
+            390
+        ]
+    }
+}

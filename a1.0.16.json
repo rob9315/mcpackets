@@ -1,0 +1,19 @@
+[
+    {
+        "classes": {
+            "entity.list": "ep",
+            "particletypes": "al",
+            "recipe.superclass": "dq"
+        },
+        "source": {
+            "classes": 460,
+            "file": "a1.0.16.jar",
+            "other": 524,
+            "size": 860090
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

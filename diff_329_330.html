@@ -1,0 +1,36 @@
+<!doctype html>
+              <html>
+                <head>
+                  <title>Burger Vitrine</title>
+                  <link rel="stylesheet" href="resources/style.css" />
+                  <script src="resources/jquery.js"></script>
+                  <script src="resources/vitrine.js"></script>
+                </head>
+                <body>
+                    <div id="vitrine">
+                        <a href="#packets"><h2 id="packets">Packets</h2></a><div class="split"><div class="left"><div class="no entry"></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_clientbound_4e"><h3 id="packets:play_clientbound_4e">PLAY_CLIENTBOUND_4E</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>78</dd></dl><pre><span class="hl_n">writeBoolean</span><span class="hl_p">((</span><span class="hl_n">a</span> <span class="hl_o">!=</span> <span class="hl_kc">null</span><span class="hl_p">)</span> <span class="hl_o">?</span> <span class="hl_mi">1</span> <span class="hl_p">:</span> <span class="hl_mi">0</span><span class="hl_p">);</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">!=</span> <span class="hl_kc">null</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeIdentifier</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="no entry"></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_serverbound_20"><h3 id="packets:play_serverbound_20">PLAY_SERVERBOUND_20</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>32</dd></dl><pre><span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">==</span> <span class="hl_n">lt$a</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeIdentifier</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div></div>
+<a href="#versions"><h2 id="versions">Versions</h2></a><div class="split"><div class="left"><div class="entry"><a href="#versions:data"><h3 id="versions:data">data</h3></a><div>1133</div></div>
+</div><div class="right"><div class="entry"><a href="#versions:data"><h3 id="versions:data">data</h3></a><div>1134</div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#versions:id"><h3 id="versions:id">id</h3></a><div>1.12-pre2</div></div>
+</div><div class="right"><div class="entry"><a href="#versions:id"><h3 id="versions:id">id</h3></a><div>1.12-pre3</div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#versions:name"><h3 id="versions:name">name</h3></a><div>1.12-pre2</div></div>
+</div><div class="right"><div class="entry"><a href="#versions:name"><h3 id="versions:name">name</h3></a><div>1.12-pre3</div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#versions:protocol"><h3 id="versions:protocol">protocol</h3></a><div>329</div></div>
+</div><div class="right"><div class="entry"><a href="#versions:protocol"><h3 id="versions:protocol">protocol</h3></a><div>330</div></div>
+</div></div>
+
+                    </div>
+                </body>
+              </html>

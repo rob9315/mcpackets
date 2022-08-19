@@ -1,0 +1,23 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "data": [
+            2576,
+            2577
+        ],
+        "id": [
+            "1.16.2-rc1",
+            "1.16.2-rc2"
+        ],
+        "name": [
+            "1.16.2 Release Candidate 1",
+            "1.16.2 Release Candidate 2"
+        ],
+        "protocol": [
+            749,
+            750
+        ]
+    }
+}

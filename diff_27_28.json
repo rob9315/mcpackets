@@ -1,0 +1,451 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_38": [
+                {
+                    "class": "kc.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 56,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "b.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.b.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((kf)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "kd.a[this.a.ordinal()]",
+                                    "instructions": [
+                                        {
+                                            "operation": "case",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "field": "var3.a().getName()",
+                                            "operation": "write",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "field": "var3.a().getProperties().size()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "var3.a().getProperties().values().iterator()",
+                                            "var": "var4"
+                                        },
+                                        {
+                                            "condition": "var4.hasNext()",
+                                            "instructions": [
+                                                {
+                                                    "operation": "store",
+                                                    "type": "Object",
+                                                    "value": "((com.mojang.authlib.properties.Property)var4.next())",
+                                                    "var": "var5"
+                                                },
+                                                {
+                                                    "field": "var5.getName()",
+                                                    "operation": "write",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "field": "var5.getValue()",
+                                                    "operation": "write",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "condition": "var5.hasSignature()",
+                                                    "instructions": [
+                                                        {
+                                                            "field": "1",
+                                                            "operation": "write",
+                                                            "type": "boolean"
+                                                        },
+                                                        {
+                                                            "field": "var5.getSignature()",
+                                                            "operation": "write",
+                                                            "type": "string"
+                                                        }
+                                                    ],
+                                                    "operation": "if"
+                                                },
+                                                {
+                                                    "instructions": [
+                                                        {
+                                                            "field": "0",
+                                                            "operation": "write",
+                                                            "type": "boolean"
+                                                        }
+                                                    ],
+                                                    "operation": "else"
+                                                }
+                                            ],
+                                            "operation": "loop"
+                                        },
+                                        {
+                                            "field": "var3.c().a()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "field": "var3.b()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "operation": "break"
+                                        },
+                                        {
+                                            "operation": "case",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "field": "var3.c().a()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "operation": "break"
+                                        },
+                                        {
+                                            "operation": "case",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "field": "var3.b()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "operation": "break"
+                                        },
+                                        {
+                                            "operation": "case",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        }
+                                    ],
+                                    "operation": "switch"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "kc.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 56,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "b.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.b.iterator()",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((kf)var2.next())",
+                                    "var": "var3"
+                                },
+                                {
+                                    "field": "kd.a[this.a.ordinal()]",
+                                    "instructions": [
+                                        {
+                                            "operation": "case",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "field": "var3.a().getName()",
+                                            "operation": "write",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "field": "var3.a().getProperties().size()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "operation": "store",
+                                            "type": "Object",
+                                            "value": "var3.a().getProperties().values().iterator()",
+                                            "var": "var4"
+                                        },
+                                        {
+                                            "condition": "var4.hasNext()",
+                                            "instructions": [
+                                                {
+                                                    "operation": "store",
+                                                    "type": "Object",
+                                                    "value": "((com.mojang.authlib.properties.Property)var4.next())",
+                                                    "var": "var5"
+                                                },
+                                                {
+                                                    "field": "var5.getName()",
+                                                    "operation": "write",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "field": "var5.getValue()",
+                                                    "operation": "write",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "condition": "var5.hasSignature()",
+                                                    "instructions": [
+                                                        {
+                                                            "field": "1",
+                                                            "operation": "write",
+                                                            "type": "boolean"
+                                                        },
+                                                        {
+                                                            "field": "var5.getSignature()",
+                                                            "operation": "write",
+                                                            "type": "string"
+                                                        }
+                                                    ],
+                                                    "operation": "if"
+                                                },
+                                                {
+                                                    "instructions": [
+                                                        {
+                                                            "field": "0",
+                                                            "operation": "write",
+                                                            "type": "boolean"
+                                                        }
+                                                    ],
+                                                    "operation": "else"
+                                                }
+                                            ],
+                                            "operation": "loop"
+                                        },
+                                        {
+                                            "field": "var3.c().a()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "field": "var3.b()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "condition": "var3.d() == null",
+                                            "instructions": [
+                                                {
+                                                    "field": "0",
+                                                    "operation": "write",
+                                                    "type": "boolean"
+                                                },
+                                                {
+                                                    "operation": "break"
+                                                }
+                                            ],
+                                            "operation": "if"
+                                        },
+                                        {
+                                            "field": "1",
+                                            "operation": "write",
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "field": "var3.d()",
+                                            "operation": "write",
+                                            "type": "chatcomponent"
+                                        },
+                                        {
+                                            "operation": "break"
+                                        },
+                                        {
+                                            "operation": "case",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "field": "var3.c().a()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "operation": "break"
+                                        },
+                                        {
+                                            "operation": "case",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "field": "var3.b()",
+                                            "operation": "write",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "operation": "break"
+                                        },
+                                        {
+                                            "operation": "case",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "condition": "var3.d() == null",
+                                            "instructions": [
+                                                {
+                                                    "field": "0",
+                                                    "operation": "write",
+                                                    "type": "boolean"
+                                                },
+                                                {
+                                                    "operation": "break"
+                                                }
+                                            ],
+                                            "operation": "if"
+                                        },
+                                        {
+                                            "field": "1",
+                                            "operation": "write",
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "field": "var3.d()",
+                                            "operation": "write",
+                                            "type": "chatcomponent"
+                                        },
+                                        {
+                                            "operation": "break"
+                                        },
+                                        {
+                                            "operation": "case",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "field": "var3.a().getId()",
+                                            "operation": "write",
+                                            "type": "uuid"
+                                        }
+                                    ],
+                                    "operation": "switch"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_47": [
+                null,
+                {
+                    "class": "lg.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 71,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "chatcomponent"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "chatcomponent"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w28a",
+            "14w28b"
+        ],
+        "name": [
+            "14w28a",
+            "14w28b"
+        ],
+        "protocol": [
+            27,
+            28
+        ]
+    }
+}

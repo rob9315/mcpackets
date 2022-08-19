@@ -1,0 +1,21 @@
+[
+    {
+        "classes": {
+            "entity.list": "jc",
+            "metadata": "ud",
+            "nethandler.client": "nb",
+            "particletypes": "by",
+            "recipe.superclass": "hk"
+        },
+        "source": {
+            "classes": 747,
+            "file": "b1.7.2.jar",
+            "other": 834,
+            "size": 1465138
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

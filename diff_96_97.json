@@ -1,0 +1,66 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_SERVERBOUND_11": [
+                {
+                    "class": "iv.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 17,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "float"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "iv.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 17,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            157,
+            158
+        ],
+        "id": [
+            "16w03a",
+            "16w04a"
+        ],
+        "name": [
+            "16w03a",
+            "16w04a"
+        ],
+        "protocol": [
+            96,
+            97
+        ]
+    }
+}

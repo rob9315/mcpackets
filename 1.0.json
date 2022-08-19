@@ -1,0 +1,23 @@
+[
+    {
+        "classes": {
+            "biome.list": "sr",
+            "biome.register": "sr",
+            "entity.list": "afw",
+            "metadata": "cr",
+            "nethandler.client": "abp",
+            "particletypes": "aad",
+            "recipe.superclass": "sl"
+        },
+        "source": {
+            "classes": 999,
+            "file": "1.0.jar",
+            "other": 1130,
+            "size": 2362837
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

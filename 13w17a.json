@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "abi",
+            "biome.register": "abi",
+            "entity.list": "my",
+            "entity.trackerentry": "jg",
+            "itemstack": "wv",
+            "metadata": "nr",
+            "nbtcompound": "bu",
+            "nethandler.client": "baq",
+            "nethandler.server": "jh",
+            "particletypes": "bdf",
+            "recipe.superclass": "yv"
+        },
+        "source": {
+            "classes": 1475,
+            "file": "13w17a.jar",
+            "other": 2346,
+            "size": 4556601
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 64
+        }
+    }
+]

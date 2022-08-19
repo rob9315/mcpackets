@@ -1,0 +1,23 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "data": [
+            2572,
+            2573
+        ],
+        "id": [
+            "20w30a",
+            "1.16.2-pre1"
+        ],
+        "name": [
+            "20w30a",
+            "1.16.2 Pre-release 1"
+        ],
+        "protocol": [
+            743,
+            744
+        ]
+    }
+}

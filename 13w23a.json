@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "abz",
+            "biome.register": "abz",
+            "entity.list": "nf",
+            "entity.trackerentry": "jl",
+            "itemstack": "xo",
+            "metadata": "oa",
+            "nbtcompound": "bw",
+            "nethandler.client": "bbt",
+            "nethandler.server": "jm",
+            "particletypes": "beh",
+            "recipe.superclass": "zo"
+        },
+        "source": {
+            "classes": 1523,
+            "file": "13w23a.jar",
+            "other": 2412,
+            "size": 4663757
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 67
+        }
+    }
+]

@@ -1,0 +1,82 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_4E": [
+                null,
+                {
+                    "class": "jx.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 78,
+                    "instructions": [
+                        {
+                            "field": "(a != null) ? 1 : 0",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "a != null",
+                            "instructions": [
+                                {
+                                    "field": "a",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_20": [
+                null,
+                {
+                    "class": "lt.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 32,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "a == lt$a.a",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            1133,
+            1134
+        ],
+        "id": [
+            "1.12-pre2",
+            "1.12-pre3"
+        ],
+        "name": [
+            "1.12-pre2",
+            "1.12-pre3"
+        ],
+        "protocol": [
+            329,
+            330
+        ]
+    }
+}

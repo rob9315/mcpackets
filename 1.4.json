@@ -1,0 +1,29 @@
+[
+    {
+        "classes": {
+            "biome.list": "xy",
+            "biome.register": "xy",
+            "entity.list": "le",
+            "entity.trackerentry": "ii",
+            "itemstack": "tu",
+            "metadata": "ls",
+            "nethandler.client": "awq",
+            "nethandler.server": "ij",
+            "particletypes": "ayx",
+            "recipe.superclass": "vp"
+        },
+        "source": {
+            "classes": 1446,
+            "file": "1.4.jar",
+            "other": 1886,
+            "size": 4926161
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 47
+        }
+    }
+]

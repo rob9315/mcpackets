@@ -1,0 +1,19 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "id": [
+            "1.8-pre2",
+            "1.8-pre3"
+        ],
+        "name": [
+            "1.8-pre2",
+            "1.8-pre3"
+        ],
+        "protocol": [
+            45,
+            46
+        ]
+    }
+}

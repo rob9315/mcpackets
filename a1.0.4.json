@@ -1,0 +1,19 @@
+[
+    {
+        "classes": {
+            "entity.list": "ii",
+            "particletypes": "eu",
+            "recipe.superclass": "hg"
+        },
+        "source": {
+            "classes": 375,
+            "file": "a1.0.4.jar",
+            "other": 434,
+            "size": 749244
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

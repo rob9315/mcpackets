@@ -1,0 +1,23 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "data": [
+            2221,
+            2222
+        ],
+        "id": [
+            "1.15-pre4",
+            "1.15-pre5"
+        ],
+        "name": [
+            "1.15 Pre-release 4",
+            "1.15 Pre-release 5"
+        ],
+        "protocol": [
+            569,
+            570
+        ]
+    }
+}

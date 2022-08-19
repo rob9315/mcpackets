@@ -1,0 +1,74 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_SERVERBOUND_14": [
+                {
+                    "class": "ls.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 20,
+                    "instructions": [
+                        {
+                            "field": "org/apache/commons/lang3/StringUtils.substring(a, 0, 0x7fff)",
+                            "operation": "write",
+                            "type": "string"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ls.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 20,
+                    "instructions": [
+                        {
+                            "field": "org/apache/commons/lang3/StringUtils.substring(a, 0, 0x7fff)",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "((this.b != null) ? 1 : 0)",
+                            "var": "var2"
+                        },
+                        {
+                            "field": "var2",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "var2",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "position"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w32d",
+            "14w33a"
+        ],
+        "name": [
+            "14w32d",
+            "14w33a"
+        ],
+        "protocol": [
+            36,
+            37
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+[
+    {
+        "classes": {
+            "biome.list": "ado",
+            "biome.register": "ado",
+            "chatcomponent": "df",
+            "entity.list": "oi",
+            "entity.trackerentry": "ki",
+            "item.list": "yv",
+            "item.register": "yv",
+            "itemstack": "yx",
+            "metadata": "pd",
+            "nbtcompound": "cb",
+            "nethandler.client": "bex",
+            "nethandler.server": "kj",
+            "particletypes": "bho",
+            "recipe.superclass": "aba"
+        },
+        "source": {
+            "classes": 1656,
+            "file": "13w36a.jar",
+            "other": 2572,
+            "size": 4890231
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 75
+        }
+    }
+]

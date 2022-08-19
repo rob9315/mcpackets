@@ -1,0 +1,23 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "data": [
+            2504,
+            2506
+        ],
+        "id": [
+            "20w06a",
+            "20w07a"
+        ],
+        "name": [
+            "Snapshot 20w06a",
+            "20w07a"
+        ],
+        "protocol": [
+            701,
+            702
+        ]
+    }
+}

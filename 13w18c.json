@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "abi",
+            "biome.register": "abi",
+            "entity.list": "mz",
+            "entity.trackerentry": "jg",
+            "itemstack": "wx",
+            "metadata": "ns",
+            "nbtcompound": "bu",
+            "nethandler.client": "baq",
+            "nethandler.server": "jh",
+            "particletypes": "bde",
+            "recipe.superclass": "yx"
+        },
+        "source": {
+            "classes": 1483,
+            "file": "13w18c.jar",
+            "other": 2354,
+            "size": 4556492
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 65
+        }
+    }
+]

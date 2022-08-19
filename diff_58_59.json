@@ -1,0 +1,105 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_SERVERBOUND_15": [
+                {
+                    "class": "id.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 21,
+                    "instructions": [
+                        {
+                            "field": "org/apache/commons/lang3/StringUtils.substring(a, 0, 0x7fff)",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "((this.b != null) ? 1 : 0)",
+                            "var": "var2"
+                        },
+                        {
+                            "field": "var2",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "var2",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "position"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "id.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 21,
+                    "instructions": [
+                        {
+                            "field": "org/apache/commons/lang3/StringUtils.substring(a, 0, 0x7fff)",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "((this.c != null) ? 1 : 0)",
+                            "var": "var2"
+                        },
+                        {
+                            "field": "var2",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "var2",
+                            "instructions": [
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "position"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            114,
+            115
+        ],
+        "id": [
+            "15w34a",
+            "15w34b"
+        ],
+        "name": [
+            "15w34a",
+            "15w34b"
+        ],
+        "protocol": [
+            58,
+            59
+        ]
+    }
+}

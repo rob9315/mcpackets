@@ -1,0 +1,19 @@
+[
+    {
+        "classes": {
+            "entity.list": "el",
+            "particletypes": "al",
+            "recipe.superclass": "do"
+        },
+        "source": {
+            "classes": 447,
+            "file": "a1.0.11.jar",
+            "other": 509,
+            "size": 839226
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

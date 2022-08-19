@@ -1,0 +1,21 @@
+[
+    {
+        "classes": {
+            "entity.list": "um",
+            "metadata": "abc",
+            "nethandler.client": "wt",
+            "particletypes": "ba",
+            "recipe.superclass": "ef"
+        },
+        "source": {
+            "classes": 881,
+            "file": "b1.8.1.jar",
+            "other": 984,
+            "size": 1995166
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

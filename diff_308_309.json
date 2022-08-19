@@ -1,0 +1,106 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_SERVERBOUND_1C": [
+                {
+                    "class": "jm.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 28,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "(int)(d * 16.0)",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "(int)(e * 16.0)",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "(int)(f * 16.0)",
+                            "operation": "write",
+                            "type": "byte"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "jm.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 28,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "float"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            811,
+            812
+        ],
+        "id": [
+            "16w39b",
+            "16w39c"
+        ],
+        "name": [
+            "16w39b",
+            "16w39c"
+        ],
+        "protocol": [
+            308,
+            309
+        ]
+    }
+}

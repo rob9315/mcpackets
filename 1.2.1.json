@@ -1,0 +1,23 @@
+[
+    {
+        "classes": {
+            "biome.list": "abi",
+            "biome.register": "abi",
+            "entity.list": "aaj",
+            "metadata": "aig",
+            "nethandler.client": "adg",
+            "particletypes": "acl",
+            "recipe.superclass": "fo"
+        },
+        "source": {
+            "classes": 1095,
+            "file": "1.2.1.jar",
+            "other": 1511,
+            "size": 3988925
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

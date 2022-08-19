@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "yr",
+            "biome.register": "yr",
+            "entity.list": "lv",
+            "entity.trackerentry": "is",
+            "itemstack": "um",
+            "metadata": "mj",
+            "nbtcompound": "bq",
+            "nethandler.client": "axz",
+            "nethandler.server": "it",
+            "particletypes": "bak",
+            "recipe.superclass": "wh"
+        },
+        "source": {
+            "classes": 1480,
+            "file": "1.4.4.jar",
+            "other": 1920,
+            "size": 4967850
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 49
+        }
+    }
+]

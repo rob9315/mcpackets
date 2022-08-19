@@ -1,0 +1,21 @@
+[
+    {
+        "classes": {
+            "entity.list": "gn",
+            "metadata": "ot",
+            "nethandler.client": "jg",
+            "particletypes": "bc",
+            "recipe.superclass": "fg"
+        },
+        "source": {
+            "classes": 580,
+            "file": "b1.2.jar",
+            "other": 651,
+            "size": 1180621
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

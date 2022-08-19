@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "aav",
+            "biome.register": "aav",
+            "entity.list": "mv",
+            "entity.trackerentry": "je",
+            "itemstack": "wm",
+            "metadata": "ns",
+            "nbtcompound": "bs",
+            "nethandler.client": "bdk",
+            "nethandler.server": "jf",
+            "particletypes": "bfy",
+            "recipe.superclass": "yk"
+        },
+        "source": {
+            "classes": 1626,
+            "file": "1.5.2.jar",
+            "other": 2534,
+            "size": 5564661
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 61
+        }
+    }
+]

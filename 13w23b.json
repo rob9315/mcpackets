@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "aca",
+            "biome.register": "aca",
+            "entity.list": "ng",
+            "entity.trackerentry": "jl",
+            "itemstack": "xp",
+            "metadata": "ob",
+            "nbtcompound": "bw",
+            "nethandler.client": "bbu",
+            "nethandler.server": "jm",
+            "particletypes": "bei",
+            "recipe.superclass": "zp"
+        },
+        "source": {
+            "classes": 1524,
+            "file": "13w23b.jar",
+            "other": 2424,
+            "size": 4939711
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 68
+        }
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "classes": {
+            "biome.list": "aea",
+            "biome.register": "aea",
+            "block.list": "aft",
+            "block.register": "afo",
+            "chatcomponent": "em",
+            "entity.list": "on",
+            "entity.trackerentry": "ks",
+            "item.list": "zj",
+            "item.register": "zg",
+            "itemstack": "zi",
+            "metadata": "pk",
+            "nbtcompound": "de",
+            "nethandler.client": "bfx",
+            "nethandler.server": "kt",
+            "particletypes": "bir",
+            "recipe.superclass": "abj",
+            "tileentity.superclass": "akq"
+        },
+        "source": {
+            "classes": 1697,
+            "file": "13w39b.jar",
+            "other": 2692,
+            "size": 5019817
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 80
+        }
+    }
+]

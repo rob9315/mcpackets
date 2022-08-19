@@ -1,0 +1,21 @@
+[
+    {
+        "classes": {
+            "entity.list": "ha",
+            "metadata": "pv",
+            "nethandler.client": "kb",
+            "particletypes": "bd",
+            "recipe.superclass": "fr"
+        },
+        "source": {
+            "classes": 613,
+            "file": "b1.3b.jar",
+            "other": 684,
+            "size": 1250445
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

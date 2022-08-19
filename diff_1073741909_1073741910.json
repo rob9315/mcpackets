@@ -1,0 +1,396 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_23": [
+                {
+                    "class": "ud.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 35,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "c.a()",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "cfv.a(d)",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "e.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Iterator",
+                            "value": "this.e.iterator()",
+                            "var": "it"
+                        },
+                        {
+                            "condition": "it.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "aai",
+                                    "value": "it.next()",
+                                    "var": "itv"
+                                },
+                                {
+                                    "field": "itv.a()",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "field": "hn.c.encode(f)",
+                            "operation": "write",
+                            "type": "nbtcompound"
+                        },
+                        {
+                            "field": "g.a()",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "h.a()",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "long"
+                        },
+                        {
+                            "field": "j",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "k",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "l",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "m",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "n",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "o",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "p",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ud.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 35,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "c.a()",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "cfx.a(d)",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "e.size()",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Iterator",
+                            "value": "this.e.iterator()",
+                            "var": "it"
+                        },
+                        {
+                            "condition": "it.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "aai",
+                                    "value": "it.next()",
+                                    "var": "itv"
+                                },
+                                {
+                                    "field": "itv.a()",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "field": "hn.c.encode(f)",
+                            "operation": "write",
+                            "type": "nbtcompound"
+                        },
+                        {
+                            "field": "g.a()",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "h.a()",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "i",
+                            "operation": "write",
+                            "type": "long"
+                        },
+                        {
+                            "field": "j",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "k",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "l",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "m",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "n",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "o",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "p",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "q.isPresent()",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "q.isPresent()",
+                            "instructions": [
+                                {
+                                    "field": "q.get().a().a()",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                },
+                                {
+                                    "field": "q.get().b()",
+                                    "operation": "write",
+                                    "type": "position"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_3B": [
+                {
+                    "class": "uz.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 59,
+                    "instructions": [
+                        {
+                            "field": "a.a()",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "b.a()",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "long"
+                        },
+                        {
+                            "field": "d.a()",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "cfv.a(e)",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "h",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "uz.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 59,
+                    "instructions": [
+                        {
+                            "field": "a.a()",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "b.a()",
+                            "operation": "write",
+                            "type": "identifier"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "long"
+                        },
+                        {
+                            "field": "d.a()",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "cfx.a(e)",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "h",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "field": "i.isPresent()",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "i.isPresent()",
+                            "instructions": [
+                                {
+                                    "field": "i.get().a().a()",
+                                    "operation": "write",
+                                    "type": "identifier"
+                                },
+                                {
+                                    "field": "i.get().b()",
+                                    "operation": "write",
+                                    "type": "position"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            3098,
+            3099
+        ],
+        "id": [
+            "1.19-pre1",
+            "1.19-pre2"
+        ],
+        "name": [
+            "1.19 Pre-release 1",
+            "1.19 Pre-release 2"
+        ],
+        "protocol": [
+            1073741909,
+            1073741910
+        ]
+    }
+}

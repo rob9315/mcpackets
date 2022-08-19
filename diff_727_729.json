@@ -1,0 +1,140 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_SERVERBOUND_0E": [
+                {
+                    "class": "ro.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 14,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "b == ro$a.c",
+                            "instructions": [
+                                {
+                                    "field": "(float)c.b",
+                                    "operation": "write",
+                                    "type": "float"
+                                },
+                                {
+                                    "field": "(float)c.c",
+                                    "operation": "write",
+                                    "type": "float"
+                                },
+                                {
+                                    "field": "(float)c.d",
+                                    "operation": "write",
+                                    "type": "float"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "condition": "b != ro$a.a",
+                            "instructions": [
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "enum"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "boolean"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "rn.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 14,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "b == rn$a.c",
+                            "instructions": [
+                                {
+                                    "field": "(float)c.b",
+                                    "operation": "write",
+                                    "type": "float"
+                                },
+                                {
+                                    "field": "(float)c.c",
+                                    "operation": "write",
+                                    "type": "float"
+                                },
+                                {
+                                    "field": "(float)c.d",
+                                    "operation": "write",
+                                    "type": "float"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "condition": "b != rn$a.a",
+                            "instructions": [
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "enum"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            2560,
+            2561
+        ],
+        "id": [
+            "1.16-pre4",
+            "1.16-pre5"
+        ],
+        "name": [
+            "1.16 Pre-release 4",
+            "1.16 Pre-release 5"
+        ],
+        "protocol": [
+            727,
+            729
+        ]
+    }
+}

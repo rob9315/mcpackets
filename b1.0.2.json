@@ -1,0 +1,20 @@
+[
+    {
+        "classes": {
+            "entity.list": "fz",
+            "nethandler.client": "io",
+            "particletypes": "av",
+            "recipe.superclass": "et"
+        },
+        "source": {
+            "classes": 542,
+            "file": "b1.0.2.jar",
+            "other": 610,
+            "size": 1129183
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

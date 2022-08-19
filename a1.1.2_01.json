@@ -1,0 +1,19 @@
+[
+    {
+        "classes": {
+            "entity.list": "ew",
+            "particletypes": "ao",
+            "recipe.superclass": "dw"
+        },
+        "source": {
+            "classes": 474,
+            "file": "a1.1.2_01.jar",
+            "other": 538,
+            "size": 897164
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

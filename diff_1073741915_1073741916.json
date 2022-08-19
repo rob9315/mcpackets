@@ -1,0 +1,23 @@
+{
+    "packets": {
+        "packet": {}
+    },
+    "version": {
+        "data": [
+            3104,
+            3106
+        ],
+        "id": [
+            "1.19-rc2",
+            "22w24a"
+        ],
+        "name": [
+            "1.19 Release Candidate 2",
+            "22w24a"
+        ],
+        "protocol": [
+            1073741915,
+            1073741916
+        ]
+    }
+}

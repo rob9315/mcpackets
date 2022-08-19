@@ -1,0 +1,32 @@
+[
+    {
+        "classes": {
+            "biome.list": "acj",
+            "biome.register": "acj",
+            "entity.list": "no",
+            "entity.trackerentry": "jt",
+            "item.list": "xv",
+            "item.register": "xv",
+            "itemstack": "xx",
+            "metadata": "oj",
+            "nbtcompound": "bw",
+            "nethandler.client": "bcc",
+            "nethandler.server": "ju",
+            "particletypes": "bep",
+            "recipe.superclass": "zy"
+        },
+        "source": {
+            "classes": 1538,
+            "file": "13w25a.jar",
+            "other": 2425,
+            "size": 4703294
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 71
+        }
+    }
+]

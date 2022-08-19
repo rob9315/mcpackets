@@ -1,0 +1,32 @@
+[
+    {
+        "classes": {
+            "biome.list": "acp",
+            "biome.register": "acp",
+            "entity.list": "ns",
+            "entity.trackerentry": "jw",
+            "item.list": "yb",
+            "item.register": "yb",
+            "itemstack": "yd",
+            "metadata": "on",
+            "nbtcompound": "bx",
+            "nethandler.client": "bct",
+            "nethandler.server": "jx",
+            "particletypes": "bfi",
+            "recipe.superclass": "aae"
+        },
+        "source": {
+            "classes": 1558,
+            "file": "1.6.2.jar",
+            "other": 2445,
+            "size": 4731988
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 74
+        }
+    }
+]

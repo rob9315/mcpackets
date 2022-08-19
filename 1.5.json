@@ -1,0 +1,30 @@
+[
+    {
+        "classes": {
+            "biome.list": "aap",
+            "biome.register": "aap",
+            "entity.list": "mv",
+            "entity.trackerentry": "je",
+            "itemstack": "wg",
+            "metadata": "nm",
+            "nbtcompound": "bs",
+            "nethandler.client": "bde",
+            "nethandler.server": "jf",
+            "particletypes": "bfs",
+            "recipe.superclass": "ye"
+        },
+        "source": {
+            "classes": 1621,
+            "file": "1.5.jar",
+            "other": 2529,
+            "size": 5555731
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 60
+        }
+    }
+]

@@ -1,0 +1,388 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_48": [
+                {
+                    "class": "ju.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 72,
+                    "instructions": [
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "a instanceof pf",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((pf)this.a)",
+                                    "var": "var2"
+                                },
+                                {
+                                    "field": "var2.b()",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "var2.a().toString()",
+                                    "operation": "write",
+                                    "type": "string"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "instructions": [
+                                {
+                                    "field": "pg.a.a(a)",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "field": "\"\"",
+                                    "operation": "write",
+                                    "type": "string"
+                                }
+                            ],
+                            "operation": "else"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "float"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "jv.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 72,
+                    "instructions": [
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "a instanceof pg",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((pg)this.a)",
+                                    "var": "var4"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "int",
+                                    "value": "var4.b()",
+                                    "var": "var2"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "var4.a().toString()",
+                                    "var": "var3"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "int",
+                                    "value": "ph.a.a(this.a)",
+                                    "var": "var2"
+                                },
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "\"\"",
+                                    "var": "var3"
+                                }
+                            ],
+                            "operation": "else"
+                        },
+                        {
+                            "field": "var2",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "var3",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "float"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "float"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_01": [
+                {
+                    "class": "kd.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 1,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "field": "c.size()",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.c.iterator()",
+                            "var": "var3"
+                        },
+                        {
+                            "condition": "var3.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((kd$a)var3.next())",
+                                    "var": "var4"
+                                },
+                                {
+                                    "field": "var4.a",
+                                    "operation": "write",
+                                    "type": "itemstack"
+                                },
+                                {
+                                    "field": "var4.b",
+                                    "operation": "write",
+                                    "type": "byte"
+                                },
+                                {
+                                    "field": "var4.c",
+                                    "operation": "write",
+                                    "type": "byte"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "field": "d.size()",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.d.iterator()",
+                            "var": "var3"
+                        },
+                        {
+                            "condition": "var3.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((kd$a)var3.next())",
+                                    "var": "var4"
+                                },
+                                {
+                                    "field": "var4.a",
+                                    "operation": "write",
+                                    "type": "itemstack"
+                                },
+                                {
+                                    "field": "var4.b",
+                                    "operation": "write",
+                                    "type": "byte"
+                                },
+                                {
+                                    "field": "var4.c",
+                                    "operation": "write",
+                                    "type": "byte"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ke.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 1,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "field": "c.size()",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.c.iterator()",
+                            "var": "var3"
+                        },
+                        {
+                            "condition": "var3.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((ke$a)var3.next())",
+                                    "var": "var4"
+                                },
+                                {
+                                    "field": "var4.a",
+                                    "operation": "write",
+                                    "type": "itemstack"
+                                },
+                                {
+                                    "field": "var4.b",
+                                    "operation": "write",
+                                    "type": "byte"
+                                },
+                                {
+                                    "field": "var4.c",
+                                    "operation": "write",
+                                    "type": "byte"
+                                }
+                            ],
+                            "operation": "loop"
+                        },
+                        {
+                            "field": "d.size()",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.d.iterator()",
+                            "var": "var3"
+                        },
+                        {
+                            "condition": "var3.hasNext()",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "((ke$a)var3.next())",
+                                    "var": "var4"
+                                },
+                                {
+                                    "field": "var4.a",
+                                    "operation": "write",
+                                    "type": "itemstack"
+                                },
+                                {
+                                    "field": "var4.b",
+                                    "operation": "write",
+                                    "type": "byte"
+                                },
+                                {
+                                    "field": "var4.c",
+                                    "operation": "write",
+                                    "type": "byte"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            1125,
+            1126
+        ],
+        "id": [
+            "17w15a",
+            "17w16a"
+        ],
+        "name": [
+            "17w15a",
+            "17w16a"
+        ],
+        "protocol": [
+            321,
+            322
+        ]
+    }
+}

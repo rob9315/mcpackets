@@ -1,0 +1,20 @@
+[
+    {
+        "classes": {
+            "entity.list": "ga",
+            "nethandler.client": "ip",
+            "particletypes": "av",
+            "recipe.superclass": "eu"
+        },
+        "source": {
+            "classes": 543,
+            "file": "b1.1_01.jar",
+            "other": 612,
+            "size": 1129768
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

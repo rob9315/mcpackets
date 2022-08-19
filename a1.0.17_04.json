@@ -1,0 +1,19 @@
+[
+    {
+        "classes": {
+            "entity.list": "ev",
+            "particletypes": "am",
+            "recipe.superclass": "dv"
+        },
+        "source": {
+            "classes": 470,
+            "file": "a1.0.17_04.jar",
+            "other": 534,
+            "size": 867341
+        },
+        "version": {
+            "entity_format": "1.10",
+            "is_flattened": false
+        }
+    }
+]

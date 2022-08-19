@@ -1,0 +1,36 @@
+[
+    {
+        "classes": {
+            "biome.list": "ady",
+            "biome.register": "ady",
+            "block.list": "afr",
+            "block.register": "afm",
+            "chatcomponent": "em",
+            "entity.list": "on",
+            "entity.trackerentry": "ks",
+            "item.list": "zh",
+            "item.register": "ze",
+            "itemstack": "zg",
+            "metadata": "pi",
+            "nbtcompound": "de",
+            "nethandler.client": "bfv",
+            "nethandler.server": "kt",
+            "particletypes": "bip",
+            "recipe.superclass": "abh",
+            "tileentity.superclass": "ako"
+        },
+        "source": {
+            "classes": 1697,
+            "file": "13w39a.jar",
+            "other": 2692,
+            "size": 5018857
+        },
+        "version": {
+            "entity_format": "1.10",
+            "id": "",
+            "is_flattened": false,
+            "name": "",
+            "protocol": 80
+        }
+    }
+]

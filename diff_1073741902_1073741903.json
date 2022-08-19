@@ -1,0 +1,88 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_SERVERBOUND_24": [
+                {
+                    "class": "xc.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 36,
+                    "instructions": [
+                        {
+                            "field": "hf.U.getId(a)",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "hf.U.getId(b)",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "xd.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 36,
+                    "instructions": [
+                        {
+                            "field": "a.isPresent()",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "a.isPresent()",
+                            "instructions": [
+                                {
+                                    "field": "hf.U.getId(a.get())",
+                                    "operation": "write",
+                                    "type": "varint"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "field": "b.isPresent()",
+                            "operation": "write",
+                            "type": "boolean"
+                        },
+                        {
+                            "condition": "b.isPresent()",
+                            "instructions": [
+                                {
+                                    "field": "hf.U.getId(b.get())",
+                                    "operation": "write",
+                                    "type": "varint"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "data": [
+            3088,
+            3089
+        ],
+        "id": [
+            "22w14a",
+            "22w15a"
+        ],
+        "name": [
+            "22w14a",
+            "22w15a"
+        ],
+        "protocol": [
+            1073741902,
+            1073741903
+        ]
+    }
+}
