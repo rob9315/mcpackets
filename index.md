@@ -1,6 +1,6 @@
 # versions
-|protocol version|versions|
-|-|-|
+|protocol version|versions|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |0|[13w41b](./13w41b.html)|[13w41a](./13w41a.html)|
 |1|[13w42b](./13w42b.html)|[13w42a](./13w42a.html)|
 |2|[13w43a](./13w43a.html)|
