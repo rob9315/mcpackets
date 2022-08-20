@@ -1,0 +1,190 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_22": [
+                {
+                    "class": "hx.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 34,
+                    "instructions": [
+                        {
+                            "field": "b.a",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "b.b",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "(short)d",
+                            "operation": "write",
+                            "type": "short"
+                        },
+                        {
+                            "condition": "c != null",
+                            "instructions": [
+                                {
+                                    "field": "c.length",
+                                    "operation": "write",
+                                    "type": "int"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "byte[]"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "instructions": [
+                                {
+                                    "field": "0",
+                                    "operation": "write",
+                                    "type": "int"
+                                }
+                            ],
+                            "operation": "else"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "hx.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 34,
+                    "instructions": [
+                        {
+                            "field": "a.a",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "a.b",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "b.length",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "Object",
+                            "value": "this.b",
+                            "var": "var2"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "var2.length",
+                            "var": "var3"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "0",
+                            "var": "var4"
+                        },
+                        {
+                            "condition": "var4 < var3",
+                            "instructions": [
+                                {
+                                    "operation": "store",
+                                    "type": "Object",
+                                    "value": "var2[var4]",
+                                    "var": "var5"
+                                },
+                                {
+                                    "field": "var5.b()",
+                                    "operation": "write",
+                                    "type": "short"
+                                },
+                                {
+                                    "field": "aoj.e.b(var5.c())",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "amount": "1",
+                                    "field": "var4",
+                                    "operation": "increment"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_23": [
+                {
+                    "class": "ht.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 35,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "aoi.a(b)",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "byte"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ht.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 35,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "field": "aoj.e.b(b)",
+                            "operation": "write",
+                            "type": "varint"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w26b",
+            "14w26c"
+        ],
+        "name": [
+            "14w26b",
+            "14w26c"
+        ],
+        "protocol": [
+            24,
+            25
+        ]
+    }
+}

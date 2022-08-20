@@ -1,0 +1,246 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_33": [
+                {
+                    "class": "ka.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 51,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "0",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2 < 4",
+                            "instructions": [
+                                {
+                                    "field": "b[var2]",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "amount": "1",
+                                    "field": "var2",
+                                    "operation": "increment"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "ke.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 51,
+                    "instructions": [
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "0",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2 < 4",
+                            "instructions": [
+                                {
+                                    "field": "c[var2]",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                },
+                                {
+                                    "amount": "1",
+                                    "field": "var2",
+                                    "operation": "increment"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_3C": [
+                {
+                    "class": "ju.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 60,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "condition": "d != jv.b",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "varint"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "jy.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 60,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "enum"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "string"
+                        },
+                        {
+                            "condition": "d != jz.b",
+                            "instructions": [
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "varint"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_SERVERBOUND_12": [
+                {
+                    "class": "lg.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 18,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "0",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2 < 4",
+                            "instructions": [
+                                {
+                                    "field": "b[var2]",
+                                    "operation": "write",
+                                    "type": "string"
+                                },
+                                {
+                                    "amount": "1",
+                                    "field": "var2",
+                                    "operation": "increment"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "lk.class",
+                    "direction": "SERVERBOUND",
+                    "from_client": true,
+                    "from_server": false,
+                    "id": 18,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "position"
+                        },
+                        {
+                            "operation": "store",
+                            "type": "int",
+                            "value": "0",
+                            "var": "var2"
+                        },
+                        {
+                            "condition": "var2 < 4",
+                            "instructions": [
+                                {
+                                    "field": "b[var2]",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                },
+                                {
+                                    "amount": "1",
+                                    "field": "var2",
+                                    "operation": "increment"
+                                }
+                            ],
+                            "operation": "loop"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w21b",
+            "14w25a"
+        ],
+        "name": [
+            "14w21b",
+            "14w25a"
+        ],
+        "protocol": [
+            20,
+            21
+        ]
+    }
+}

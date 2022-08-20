@@ -1,0 +1,318 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_15": [
+                {
+                    "class": "it.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 21,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "byte"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "it.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 21,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_16": [
+                {
+                    "class": "iv.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 22,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "byte"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "iv.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 22,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_17": [
+                {
+                    "class": "iu.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 23,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "byte"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "iu.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 23,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ],
+            "PLAY_CLIENTBOUND_18": [
+                {
+                    "class": "kg.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 24,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "byte"
+                        }
+                    ],
+                    "state": "PLAY"
+                },
+                {
+                    "class": "kg.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 24,
+                    "instructions": [
+                        {
+                            "field": "a",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "b",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "c",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "d",
+                            "operation": "write",
+                            "type": "int"
+                        },
+                        {
+                            "field": "e",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "f",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "field": "g",
+                            "operation": "write",
+                            "type": "boolean"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w25a",
+            "14w25b"
+        ],
+        "name": [
+            "14w25a",
+            "14w25b"
+        ],
+        "protocol": [
+            21,
+            22
+        ]
+    }
+}
