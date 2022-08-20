@@ -1,0 +1,278 @@
+<!doctype html>
+              <html>
+                <head>
+                  <title>Burger Vitrine</title>
+                  <link rel="stylesheet" href="resources/style.css" />
+                  <script src="resources/jquery.js"></script>
+                  <script src="resources/vitrine.js"></script>
+                </head>
+                <body>
+                    <div id="vitrine">
+                        <a href="#packets"><h2 id="packets">Packets</h2></a><div class="split"><div class="left"><div class="entry"><a href="#packets:login_clientbound_01"><h3 id="packets:login_clientbound_01">LOGIN_CLIENTBOUND_01</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>1</dd></dl><pre><span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeShort</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">getEncoded</span><span class="hl_p">().</span><span class="hl_na">length</span><span class="hl_p">);</span>
+<span class="hl_n">writeBytes</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">getEncoded</span><span class="hl_p">());</span>
+<span class="hl_n">writeShort</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">.</span><span class="hl_na">length</span><span class="hl_p">);</span>
+<span class="hl_n">writeBytes</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:login_clientbound_01"><h3 id="packets:login_clientbound_01">LOGIN_CLIENTBOUND_01</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>1</dd></dl><pre><span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">getEncoded</span><span class="hl_p">().</span><span class="hl_na">length</span><span class="hl_p">);</span>
+<span class="hl_n">writeBytes</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">getEncoded</span><span class="hl_p">());</span>
+<span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">.</span><span class="hl_na">length</span><span class="hl_p">);</span>
+<span class="hl_n">writeBytes</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:login_serverbound_01"><h3 id="packets:login_serverbound_01">LOGIN_SERVERBOUND_01</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>1</dd></dl><pre><span class="hl_n">writeShort</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">.</span><span class="hl_na">length</span><span class="hl_p">);</span>
+<span class="hl_n">writeBytes</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeShort</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">length</span><span class="hl_p">);</span>
+<span class="hl_n">writeBytes</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:login_serverbound_01"><h3 id="packets:login_serverbound_01">LOGIN_SERVERBOUND_01</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>1</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">.</span><span class="hl_na">length</span><span class="hl_p">);</span>
+<span class="hl_n">writeBytes</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">length</span><span class="hl_p">);</span>
+<span class="hl_n">writeBytes</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_clientbound_0c"><h3 id="packets:play_clientbound_0c">PLAY_CLIENTBOUND_0C</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>12</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">Object</span> <span class="hl_n">var2</span> <span class="hl_o">=</span> <span class="hl_k">this</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">.</span><span class="hl_na">getId</span><span class="hl_p">();</span>
+<span class="hl_n">writeString</span><span class="hl_p">((</span><span class="hl_n">var2</span> <span class="hl_o">==</span> <span class="hl_kc">null</span><span class="hl_p">)</span> <span class="hl_o">?</span> <span class="hl_s">&quot;&quot;</span> <span class="hl_p">:</span> <span class="hl_n">var2</span><span class="hl_p">.</span><span class="hl_na">toString</span><span class="hl_p">());</span>
+<span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">getName</span><span class="hl_p">());</span>
+<span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">getProperties</span><span class="hl_p">().</span><span class="hl_na">size</span><span class="hl_p">());</span>
+<span class="hl_n">Object</span> <span class="hl_n">var3</span> <span class="hl_o">=</span> <span class="hl_k">this</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">.</span><span class="hl_na">getProperties</span><span class="hl_p">().</span><span class="hl_na">values</span><span class="hl_p">().</span><span class="hl_na">iterator</span><span class="hl_p">();</span>
+<span class="hl_k">while</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">hasNext</span><span class="hl_p">())</span> <span class="hl_p">{</span>
+  <span class="hl_n">Object</span> <span class="hl_n">var4</span> <span class="hl_o">=</span> <span class="hl_p">((</span><span class="hl_n">com</span><span class="hl_p">.</span><span class="hl_na">mojang</span><span class="hl_p">.</span><span class="hl_na">authlib</span><span class="hl_p">.</span><span class="hl_na">properties</span><span class="hl_p">.</span><span class="hl_na">Property</span><span class="hl_p">)</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">next</span><span class="hl_p">());</span>
+  <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">var4</span><span class="hl_p">.</span><span class="hl_na">getName</span><span class="hl_p">());</span>
+  <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">var4</span><span class="hl_p">.</span><span class="hl_na">getValue</span><span class="hl_p">());</span>
+  <span class="hl_n">writeString</span><span class="hl_p">((</span><span class="hl_n">var4</span><span class="hl_p">.</span><span class="hl_na">getSignature</span><span class="hl_p">()</span> <span class="hl_o">==</span> <span class="hl_kc">null</span><span class="hl_p">)</span> <span class="hl_o">?</span> <span class="hl_s">&quot;&quot;</span> <span class="hl_p">:</span> <span class="hl_n">var4</span><span class="hl_p">.</span><span class="hl_na">getSignature</span><span class="hl_p">());</span>
+<span class="hl_p">}</span>
+<span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+<span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+<span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">f</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">g</span><span class="hl_p">);</span>
+<span class="hl_n">writeShort</span><span class="hl_p">(</span><span class="hl_n">h</span><span class="hl_p">);</span>
+<span class="hl_n">writeMetadata</span><span class="hl_p">(</span><span class="hl_n">i</span><span class="hl_p">);</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_clientbound_0c"><h3 id="packets:play_clientbound_0c">PLAY_CLIENTBOUND_0C</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>12</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeUUID</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+<span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+<span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+<span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">f</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">g</span><span class="hl_p">);</span>
+<span class="hl_n">writeShort</span><span class="hl_p">(</span><span class="hl_n">h</span><span class="hl_p">);</span>
+<span class="hl_n">writeMetadata</span><span class="hl_p">(</span><span class="hl_n">i</span><span class="hl_p">);</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_clientbound_38"><h3 id="packets:play_clientbound_38">PLAY_CLIENTBOUND_38</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>56</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">ix</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">));</span>
+<span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">size</span><span class="hl_p">());</span>
+<span class="hl_n">Object</span> <span class="hl_n">var2</span> <span class="hl_o">=</span> <span class="hl_k">this</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">.</span><span class="hl_na">iterator</span><span class="hl_p">();</span>
+<span class="hl_k">while</span><span class="hl_p">(</span><span class="hl_n">var2</span><span class="hl_p">.</span><span class="hl_na">hasNext</span><span class="hl_p">())</span> <span class="hl_p">{</span>
+  <span class="hl_n">Object</span> <span class="hl_n">var3</span> <span class="hl_o">=</span> <span class="hl_p">((</span><span class="hl_n">iy</span><span class="hl_p">)</span><span class="hl_n">var2</span><span class="hl_p">.</span><span class="hl_na">next</span><span class="hl_p">());</span>
+  <span class="hl_n">writeUUID</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">());</span>
+  <span class="hl_k">switch</span><span class="hl_p">(</span><span class="hl_n">iw</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_o">[</span><span class="hl_k">this</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">.</span><span class="hl_na">ordinal</span><span class="hl_p">()</span><span class="hl_o">]</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+    <span class="hl_k">case</span> <span class="hl_mi">1</span><span class="hl_p">:</span>
+      <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">());</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">d</span><span class="hl_p">().</span><span class="hl_na">a</span><span class="hl_p">());</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">c</span><span class="hl_p">());</span>
+      <span class="hl_k">break</span><span class="hl_p">;</span>
+    <span class="hl_k">case</span> <span class="hl_mi">2</span><span class="hl_p">:</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">d</span><span class="hl_p">().</span><span class="hl_na">a</span><span class="hl_p">());</span>
+      <span class="hl_k">break</span><span class="hl_p">;</span>
+    <span class="hl_k">case</span> <span class="hl_mi">3</span><span class="hl_p">:</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">c</span><span class="hl_p">());</span>
+  <span class="hl_p">}</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_clientbound_38"><h3 id="packets:play_clientbound_38">PLAY_CLIENTBOUND_38</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>56</dd></dl><pre><span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">size</span><span class="hl_p">());</span>
+<span class="hl_n">Object</span> <span class="hl_n">var2</span> <span class="hl_o">=</span> <span class="hl_k">this</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">.</span><span class="hl_na">iterator</span><span class="hl_p">();</span>
+<span class="hl_k">while</span><span class="hl_p">(</span><span class="hl_n">var2</span><span class="hl_p">.</span><span class="hl_na">hasNext</span><span class="hl_p">())</span> <span class="hl_p">{</span>
+  <span class="hl_n">Object</span> <span class="hl_n">var3</span> <span class="hl_o">=</span> <span class="hl_p">((</span><span class="hl_n">ja</span><span class="hl_p">)</span><span class="hl_n">var2</span><span class="hl_p">.</span><span class="hl_na">next</span><span class="hl_p">());</span>
+  <span class="hl_k">switch</span><span class="hl_p">(</span><span class="hl_n">iy</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_o">[</span><span class="hl_k">this</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">.</span><span class="hl_na">ordinal</span><span class="hl_p">()</span><span class="hl_o">]</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+    <span class="hl_k">case</span> <span class="hl_mi">1</span><span class="hl_p">:</span>
+      <span class="hl_n">writeUUID</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">().</span><span class="hl_na">getId</span><span class="hl_p">());</span>
+      <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">().</span><span class="hl_na">getName</span><span class="hl_p">());</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">().</span><span class="hl_na">getProperties</span><span class="hl_p">().</span><span class="hl_na">size</span><span class="hl_p">());</span>
+      <span class="hl_n">Object</span> <span class="hl_n">var4</span> <span class="hl_o">=</span> <span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">().</span><span class="hl_na">getProperties</span><span class="hl_p">().</span><span class="hl_na">values</span><span class="hl_p">().</span><span class="hl_na">iterator</span><span class="hl_p">();</span>
+      <span class="hl_k">while</span><span class="hl_p">(</span><span class="hl_n">var4</span><span class="hl_p">.</span><span class="hl_na">hasNext</span><span class="hl_p">())</span> <span class="hl_p">{</span>
+        <span class="hl_n">Object</span> <span class="hl_n">var5</span> <span class="hl_o">=</span> <span class="hl_p">((</span><span class="hl_n">com</span><span class="hl_p">.</span><span class="hl_na">mojang</span><span class="hl_p">.</span><span class="hl_na">authlib</span><span class="hl_p">.</span><span class="hl_na">properties</span><span class="hl_p">.</span><span class="hl_na">Property</span><span class="hl_p">)</span><span class="hl_n">var4</span><span class="hl_p">.</span><span class="hl_na">next</span><span class="hl_p">());</span>
+        <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">var5</span><span class="hl_p">.</span><span class="hl_na">getName</span><span class="hl_p">());</span>
+        <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">var5</span><span class="hl_p">.</span><span class="hl_na">getValue</span><span class="hl_p">());</span>
+        <span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">var5</span><span class="hl_p">.</span><span class="hl_na">hasSignature</span><span class="hl_p">())</span> <span class="hl_p">{</span>
+          <span class="hl_n">writeBoolean</span><span class="hl_p">(</span><span class="hl_mi">1</span><span class="hl_p">);</span>
+          <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">var5</span><span class="hl_p">.</span><span class="hl_na">getSignature</span><span class="hl_p">());</span>
+        <span class="hl_p">}</span> <span class="hl_k">else</span> <span class="hl_p">{</span>
+          <span class="hl_n">writeBoolean</span><span class="hl_p">(</span><span class="hl_mi">0</span><span class="hl_p">);</span>
+        <span class="hl_p">}</span>
+      <span class="hl_p">}</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">c</span><span class="hl_p">().</span><span class="hl_na">a</span><span class="hl_p">());</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">());</span>
+      <span class="hl_k">break</span><span class="hl_p">;</span>
+    <span class="hl_k">case</span> <span class="hl_mi">2</span><span class="hl_p">:</span>
+      <span class="hl_n">writeUUID</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">().</span><span class="hl_na">getId</span><span class="hl_p">());</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">c</span><span class="hl_p">().</span><span class="hl_na">a</span><span class="hl_p">());</span>
+      <span class="hl_k">break</span><span class="hl_p">;</span>
+    <span class="hl_k">case</span> <span class="hl_mi">3</span><span class="hl_p">:</span>
+      <span class="hl_n">writeUUID</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">().</span><span class="hl_na">getId</span><span class="hl_p">());</span>
+      <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">());</span>
+      <span class="hl_k">break</span><span class="hl_p">;</span>
+    <span class="hl_k">case</span> <span class="hl_mi">4</span><span class="hl_p">:</span>
+      <span class="hl_n">writeUUID</span><span class="hl_p">(</span><span class="hl_n">var3</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">().</span><span class="hl_na">getId</span><span class="hl_p">());</span>
+  <span class="hl_p">}</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_clientbound_3c"><h3 id="packets:play_clientbound_3c">PLAY_CLIENTBOUND_3C</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>60</dd></dl><pre><span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">d</span> <span class="hl_o">!=</span> <span class="hl_mi">1</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+  <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_clientbound_3c"><h3 id="packets:play_clientbound_3c">PLAY_CLIENTBOUND_3C</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>60</dd></dl><pre><span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">d</span> <span class="hl_o">!=</span> <span class="hl_n">jv</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+  <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_clientbound_42"><h3 id="packets:play_clientbound_42">PLAY_CLIENTBOUND_42</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>66</dd></dl><pre><span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">.</span><span class="hl_na">e</span><span class="hl_p">);</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">==</span> <span class="hl_n">iu</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+  <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+<span class="hl_p">}</span> <span class="hl_k">else</span> <span class="hl_p">{</span>
+  <span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">==</span> <span class="hl_n">iu</span><span class="hl_p">.</span><span class="hl_na">c</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+    <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+    <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+  <span class="hl_p">}</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_clientbound_42"><h3 id="packets:play_clientbound_42">PLAY_CLIENTBOUND_42</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>66</dd></dl><pre><span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">==</span> <span class="hl_n">iw</span><span class="hl_p">.</span><span class="hl_na">b</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+  <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+<span class="hl_p">}</span> <span class="hl_k">else</span> <span class="hl_p">{</span>
+  <span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">==</span> <span class="hl_n">iw</span><span class="hl_p">.</span><span class="hl_na">c</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+    <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+    <span class="hl_n">writeString</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+  <span class="hl_p">}</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_clientbound_44"><h3 id="packets:play_clientbound_44">PLAY_CLIENTBOUND_44</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>68</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">jg</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">));</span>
+<span class="hl_k">switch</span><span class="hl_p">(</span><span class="hl_n">jf</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_o">[</span><span class="hl_k">this</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">.</span><span class="hl_na">ordinal</span><span class="hl_p">()</span><span class="hl_o">]</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_k">case</span> <span class="hl_mi">1</span><span class="hl_p">:</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">2</span><span class="hl_p">:</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">f</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">g</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">3</span><span class="hl_p">:</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">5</span><span class="hl_p">:</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">h</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">4</span><span class="hl_p">:</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">i</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">6</span><span class="hl_p">:</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">f</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">g</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">i</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">h</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_clientbound_44"><h3 id="packets:play_clientbound_44">PLAY_CLIENTBOUND_44</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>68</dd></dl><pre><span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_k">switch</span><span class="hl_p">(</span><span class="hl_n">jh</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_o">[</span><span class="hl_k">this</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">.</span><span class="hl_na">ordinal</span><span class="hl_p">()</span><span class="hl_o">]</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_k">case</span> <span class="hl_mi">1</span><span class="hl_p">:</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">2</span><span class="hl_p">:</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">f</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">g</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">3</span><span class="hl_p">:</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">5</span><span class="hl_p">:</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">h</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">4</span><span class="hl_p">:</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">i</span><span class="hl_p">);</span>
+    <span class="hl_k">break</span><span class="hl_p">;</span>
+  <span class="hl_k">case</span> <span class="hl_mi">6</span><span class="hl_p">:</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">f</span><span class="hl_p">);</span>
+    <span class="hl_n">writeDouble</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">g</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">i</span><span class="hl_p">);</span>
+    <span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">h</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_clientbound_45"><h3 id="packets:play_clientbound_45">PLAY_CLIENTBOUND_45</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>69</dd></dl><pre><span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">());</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">!=</span> <span class="hl_n">jw</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeChatComponent</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">==</span> <span class="hl_n">jw</span><span class="hl_p">.</span><span class="hl_na">c</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+  <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+  <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_clientbound_45"><h3 id="packets:play_clientbound_45">PLAY_CLIENTBOUND_45</h3></a><div><dl><dt>Direction</dt><dd>Server to client</dd><dt>ID</dt><dd>69</dd></dl><pre><span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">!=</span> <span class="hl_n">jz</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeChatComponent</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+<span class="hl_k">if</span><span class="hl_p">(</span><span class="hl_n">a</span> <span class="hl_o">==</span> <span class="hl_n">jz</span><span class="hl_p">.</span><span class="hl_na">c</span><span class="hl_p">)</span> <span class="hl_p">{</span>
+  <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+  <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">d</span><span class="hl_p">);</span>
+  <span class="hl_n">writeInt</span><span class="hl_p">(</span><span class="hl_n">e</span><span class="hl_p">);</span>
+<span class="hl_p">}</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_serverbound_02"><h3 id="packets:play_serverbound_02">PLAY_SERVERBOUND_02</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>2</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">kp</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">));</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_serverbound_02"><h3 id="packets:play_serverbound_02">PLAY_SERVERBOUND_02</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>2</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_serverbound_07"><h3 id="packets:play_serverbound_07">PLAY_SERVERBOUND_07</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>7</dd></dl><pre><span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">kx</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">));</span>
+<span class="hl_n">writePosition</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">());</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_serverbound_07"><h3 id="packets:play_serverbound_07">PLAY_SERVERBOUND_07</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>7</dd></dl><pre><span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+<span class="hl_n">writePosition</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">());</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_serverbound_0b"><h3 id="packets:play_serverbound_0b">PLAY_SERVERBOUND_0B</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>11</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">kz</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">));</span>
+<span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_serverbound_0b"><h3 id="packets:play_serverbound_0b">PLAY_SERVERBOUND_0B</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>11</dd></dl><pre><span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+<span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">b</span><span class="hl_p">);</span>
+<span class="hl_n">writeVarInt</span><span class="hl_p">(</span><span class="hl_n">c</span><span class="hl_p">);</span>
+</pre></div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#packets:play_serverbound_16"><h3 id="packets:play_serverbound_16">PLAY_SERVERBOUND_16</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>22</dd></dl><pre><span class="hl_n">writeByte</span><span class="hl_p">(</span><span class="hl_n">kh</span><span class="hl_p">.</span><span class="hl_na">a</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">));</span>
+</pre></div></div>
+</div><div class="right"><div class="entry"><a href="#packets:play_serverbound_16"><h3 id="packets:play_serverbound_16">PLAY_SERVERBOUND_16</h3></a><div><dl><dt>Direction</dt><dd>Client to server</dd><dt>ID</dt><dd>22</dd></dl><pre><span class="hl_n">writeVarIntEnum</span><span class="hl_p">(</span><span class="hl_n">a</span><span class="hl_p">);</span>
+</pre></div></div>
+</div></div>
+<a href="#versions"><h2 id="versions">Versions</h2></a><div class="split"><div class="left"><div class="entry"><a href="#versions:id"><h3 id="versions:id">id</h3></a><div>14w20b</div></div>
+</div><div class="right"><div class="entry"><a href="#versions:id"><h3 id="versions:id">id</h3></a><div>14w21a</div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#versions:name"><h3 id="versions:name">name</h3></a><div>14w20b</div></div>
+</div><div class="right"><div class="entry"><a href="#versions:name"><h3 id="versions:name">name</h3></a><div>14w21a</div></div>
+</div></div><div class="split"><div class="left"><div class="entry"><a href="#versions:protocol"><h3 id="versions:protocol">protocol</h3></a><div>18</div></div>
+</div><div class="right"><div class="entry"><a href="#versions:protocol"><h3 id="versions:protocol">protocol</h3></a><div>19</div></div>
+</div></div>
+
+                    </div>
+                </body>
+              </html>

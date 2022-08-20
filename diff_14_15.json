@@ -1,0 +1,92 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_44": [
+                null,
+                {
+                    "class": "iy.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 68,
+                    "instructions": [
+                        {
+                            "field": "ja.a(a)",
+                            "operation": "write",
+                            "type": "varint"
+                        },
+                        {
+                            "field": "iz.a[this.a.ordinal()]",
+                            "instructions": [
+                                {
+                                    "operation": "case",
+                                    "value": "1"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "2"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "f",
+                                    "operation": "write",
+                                    "type": "varint"
+                                },
+                                {
+                                    "operation": "break"
+                                },
+                                {
+                                    "operation": "case",
+                                    "value": "3"
+                                },
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "double"
+                                },
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "double"
+                                }
+                            ],
+                            "operation": "switch"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w11b",
+            "14w17a"
+        ],
+        "name": [
+            "14w11b",
+            "14w17a"
+        ],
+        "protocol": [
+            14,
+            15
+        ]
+    }
+}

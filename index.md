@@ -17,6 +17,12 @@
 | 12 | [14w08a](./14w08a.html) |
 | 13 | [14w10c](./14w10c.html) [14w10b](./14w10b.html) [14w10a](./14w10a.html) |
 | 14 | [14w11b](./14w11b.html) [14w11a](./14w11a.html) |
+| 15 | [14w17a](./14w17a.html) |
+| 16 | [14w18b](./14w18b.html) [14w18a](./14w18a.html) |
+| 17 | [14w19a](./14w19a.html) |
+| 18 | [14w20b](./14w20b.html) [14w20a](./14w20a.html) |
+| 19 | [14w21a](./14w21a.html) |
+| 20 | [14w21b](./14w21b.html) |
 | 26 | [14w27b](./14w27b.html) [14w27a](./14w27a.html) |
 | 27 | [14w28a](./14w28a.html) |
 | 28 | [14w28b](./14w28b.html) |
@@ -465,7 +471,13 @@
 | [11..12](./diff_11_12.html) | [14w07a](./14w07a.html) | [14w08a](./14w08a.html) |
 | [12..13](./diff_12_13.html) | [14w08a](./14w08a.html) | [14w10c](./14w10c.html) |
 | [13..14](./diff_13_14.html) | [14w10c](./14w10c.html) | [14w11b](./14w11b.html) |
-| [14..26](./diff_14_26.html) | [14w11b](./14w11b.html) | [14w27b](./14w27b.html) |
+| [14..15](./diff_14_15.html) | [14w11b](./14w11b.html) | [14w17a](./14w17a.html) |
+| [15..16](./diff_15_16.html) | [14w17a](./14w17a.html) | [14w18b](./14w18b.html) |
+| [16..17](./diff_16_17.html) | [14w18b](./14w18b.html) | [14w19a](./14w19a.html) |
+| [17..18](./diff_17_18.html) | [14w19a](./14w19a.html) | [14w20b](./14w20b.html) |
+| [18..19](./diff_18_19.html) | [14w20b](./14w20b.html) | [14w21a](./14w21a.html) |
+| [19..20](./diff_19_20.html) | [14w21a](./14w21a.html) | [14w21b](./14w21b.html) |
+| [20..26](./diff_20_26.html) | [14w21b](./14w21b.html) | [14w27b](./14w27b.html) |
 | [26..27](./diff_26_27.html) | [14w27b](./14w27b.html) | [14w28a](./14w28a.html) |
 | [27..28](./diff_27_28.html) | [14w28a](./14w28a.html) | [14w28b](./14w28b.html) |
 | [28..29](./diff_28_29.html) | [14w28b](./14w28b.html) | [14w29b](./14w29b.html) |

@@ -1,0 +1,70 @@
+{
+    "packets": {
+        "packet": {
+            "PLAY_CLIENTBOUND_45": [
+                null,
+                {
+                    "class": "jv.class",
+                    "direction": "CLIENTBOUND",
+                    "from_client": false,
+                    "from_server": true,
+                    "id": 69,
+                    "instructions": [
+                        {
+                            "field": "a.a()",
+                            "operation": "write",
+                            "type": "byte"
+                        },
+                        {
+                            "condition": "a != jw.a",
+                            "instructions": [
+                                {
+                                    "field": "b",
+                                    "operation": "write",
+                                    "type": "chatcomponent"
+                                }
+                            ],
+                            "operation": "if"
+                        },
+                        {
+                            "condition": "a == jw.c",
+                            "instructions": [
+                                {
+                                    "field": "c",
+                                    "operation": "write",
+                                    "type": "int"
+                                },
+                                {
+                                    "field": "d",
+                                    "operation": "write",
+                                    "type": "int"
+                                },
+                                {
+                                    "field": "e",
+                                    "operation": "write",
+                                    "type": "int"
+                                }
+                            ],
+                            "operation": "if"
+                        }
+                    ],
+                    "state": "PLAY"
+                }
+            ]
+        }
+    },
+    "version": {
+        "id": [
+            "14w19a",
+            "14w20b"
+        ],
+        "name": [
+            "14w19a",
+            "14w20b"
+        ],
+        "protocol": [
+            17,
+            18
+        ]
+    }
+}
